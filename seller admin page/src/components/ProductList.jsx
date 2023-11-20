@@ -12,7 +12,6 @@ const ProductList = ({ productList, onDeleteProduct }) => {
 
   return (
     <div className="ProductList">
-      <h2>Product List</h2>
       {productList.map((product) => (
         <Product
           key={product.productId}

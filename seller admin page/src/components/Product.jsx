@@ -10,8 +10,9 @@ const Product = ({ product, onDelete }) => {
   return (
     <div className="Product">
       <span>
-        {product.productName} (ID: {product.productId}, Selling Price:{" "}
-        {product.sellingPrice})
+        Product ID: {product.productId}
+        <br />
+        {product.productName} _ Selling Price: {product.sellingPrice}
       </span>
       <button onClick={handleDelete}>Delete</button>
     </div>

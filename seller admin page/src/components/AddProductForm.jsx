@@ -32,12 +32,14 @@ const AddProductForm = ({ onAddProduct }) => {
     productIdRef.current.value = "";
     productNameRef.current.value = "";
     sellingPriceRef.current.value = "";
-    setError("");
+    setError("Product Added Successfully :)");
+    setInterval(() => {
+      setError("");
+    }, 2000);
   };
 
   return (
     <div className="AddProductForm">
-      <h2>Add a Product</h2>
       <form onSubmit={handleSubmission}>
         <div>
           <input type="number" placeholder="Product Id" ref={productIdRef} />

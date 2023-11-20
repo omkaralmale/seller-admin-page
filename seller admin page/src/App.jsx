@@ -16,6 +16,14 @@ function App() {
     }
   }, []);
 
+  const calculateTotalSum = (productList) => {
+    const sum = productList.reduce(
+      (total, product) => total + parseFloat(product.sellingPrice),
+      0
+    );
+    setTotalSum(sum);
+  };
+
   const addProduct = (newProduct) => {
     const updatedProducts = [...products, newProduct];
     setProducts(updatedProducts);
@@ -32,19 +40,11 @@ function App() {
     calculateTotalSum(updatedProducts);
   };
 
-  const calculateTotalSum = (productList) => {
-    const sum = productList.reduce(
-      (total, product) => total + parseFloat(product.sellingPrice),
-      0
-    );
-    setTotalSum(sum);
-  };
-
   return (
     <div className="App">
       <h1>Product Management</h1>
       <AddProductForm onAddProduct={addProduct} />
-      <div className="total">Total Sum: ${totalSum.toFixed(2)}</div>
+      <div className="total">Total Sum: $ {totalSum.toFixed(2)}</div>
       <ProductList productList={products} onDeleteProduct={deleteProduct} />
     </div>
   );

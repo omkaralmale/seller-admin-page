@@ -2,7 +2,7 @@
   background-color: #f5f5f5;
   padding: 20px;
   border: 2px solid rgb(0, 0, 0, 0.4);
-  width: 400px;
+  width: 600px;
   margin: 0;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .AddProductForm button:hover {
-  background-color: darkgreen;
+  background-color: rgb(0, 83, 0);
 }
 
 /* Error message */
