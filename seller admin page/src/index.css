@@ -1,0 +1,12 @@
+button {
+  font-size: 15px;
+  font-weight: 900;
+  font-family: Quicksand;
+  cursor: pointer;
+}
+
+input {
+  font-size: 15px;
+  font-weight: 900;
+  font-family: Quicksand;
+}

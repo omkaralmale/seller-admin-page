@@ -1,0 +1,119 @@
+body {
+  font-family: Quicksand;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #780000;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-decoration: 2.5px solid green underline;
+}
+
+/* AddProductForm component styles */
+.AddProductForm {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.AddProductForm h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.AddProductForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.AddProductForm div {
+  margin-bottom: 15px;
+}
+
+.AddProductForm input[type="number"],
+.AddProductForm input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8e0d0d;
+  outline: none;
+}
+
+.AddProductForm button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.AddProductForm button:hover {
+  background-color: #45a049;
+}
+
+.AddProductForm .error {
+  color: #ff0000;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* ProductList component styles */
+.ProductList {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.ProductList h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Product {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Product span {
+  flex: 1;
+  color: #333;
+}
+
+.Product button {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Product button:hover {
+  background-color: #cc0000;
+}
+
+.total {
+  font-weight: bolder;
+  margin-top: 10px;
+}

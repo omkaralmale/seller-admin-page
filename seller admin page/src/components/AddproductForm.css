@@ -1,0 +1,52 @@
+.AddProductForm {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 2px solid rgb(0, 0, 0, 0.4);
+  width: 400px;
+  margin: 0;
+}
+
+/* Form heading */
+.AddProductForm h2 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+/* Form styles */
+.AddProductForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form input fields */
+.AddProductForm input[type="number"],
+.AddProductForm input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  outline: none;
+}
+
+/* Add to List button */
+.AddProductForm button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.AddProductForm button:hover {
+  background-color: darkgreen;
+}
+
+/* Error message */
+.AddProductForm .error {
+  color: #ff0000;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
